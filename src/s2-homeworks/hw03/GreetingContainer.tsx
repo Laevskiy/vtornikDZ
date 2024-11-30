@@ -13,7 +13,7 @@ export const pureAddUser = (name: any, setError: any, setName: any, addUserCallb
         setError('Пустая строка')
     }else{
         addUserCallback(name)
-        setName('')
+        //setName('')
     }
 
 }
