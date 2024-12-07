@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/vtornikDZ/static/css/main.be41b3e6.css",
-    "main.js": "/vtornikDZ/static/js/main.39fba2db.js",
+    "main.css": "/vtornikDZ/static/css/main.5aa2bad6.css",
+    "main.js": "/vtornikDZ/static/js/main.59b8e42e.js",
     "static/js/787.66cb4309.chunk.js": "/vtornikDZ/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/vtornikDZ/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/404.svg": "/vtornikDZ/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
+    "static/media/closeOutline.svg": "/vtornikDZ/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/checked.svg": "/vtornikDZ/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/vtornikDZ/index.html",
-    "main.be41b3e6.css.map": "/vtornikDZ/static/css/main.be41b3e6.css.map",
-    "main.39fba2db.js.map": "/vtornikDZ/static/js/main.39fba2db.js.map",
+    "static/media/burger.svg": "/vtornikDZ/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
+    "main.5aa2bad6.css.map": "/vtornikDZ/static/css/main.5aa2bad6.css.map",
+    "main.59b8e42e.js.map": "/vtornikDZ/static/js/main.59b8e42e.js.map",
     "787.66cb4309.chunk.js.map": "/vtornikDZ/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be41b3e6.css",
-    "static/js/main.39fba2db.js"
+    "static/css/main.5aa2bad6.css",
+    "static/js/main.59b8e42e.js"
   ]
 }
