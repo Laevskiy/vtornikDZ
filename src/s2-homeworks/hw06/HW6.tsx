@@ -19,11 +19,18 @@ const HW6 = () => {
     }
     const restore = () => {
         // делают студенты
+        let a = localStorage.getItem('hw6-editable-span-value')
+
+        if(a !== null){
+            setValue(a)
+        }
+
 
     }
 
     return (
         <div id={'hw6'}>
+
             <div className={s2.hwTitle}>Homework #6</div>
 
             {/*демонстрация возможностей компоненты:*/}
