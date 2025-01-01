@@ -13,10 +13,10 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
             if(action.payload === 'up') {
                 const z = state.sort(function (a:any, b:any) {
                     if (a.name < b.name) {
-                        return 1;
+                        return -1;
                     }
                     if (a.name > b.name) {
-                        return -1;
+                        return 1;
                     }
                     return 0;
                 })
@@ -26,10 +26,10 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
                 console.log("down")
                 const z = state.sort(function (a:any, b:any) {
                     if (a.name < b.name) {
-                        return -1;
+                        return 1;
                     }
                     if (a.name > b.name) {
-                        return 1;
+                        return -1;
                     }
                     return 0;
                 })
