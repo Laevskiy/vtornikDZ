@@ -18,7 +18,7 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
                     if (a.name > b.name) {
                         return 1;
                     }
-                    return 0;
+                    //return 0;
                 })
 
                 return z;
@@ -31,7 +31,7 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
                     if (a.name > b.name) {
                         return -1;
                     }
-                    return 0;
+                    //return 0;
                 })
 
                 return z;
