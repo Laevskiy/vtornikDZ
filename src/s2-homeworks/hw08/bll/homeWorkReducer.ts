@@ -50,8 +50,8 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
         }
         case 'check': {
             console.log(action.payload)
-            const a = initialPeople.filter((a:any)=>a.age>=action.payload)
-            return a // need to fix
+            const u = initialPeople.filter((a:any)=>a.age>=action.payload)
+            return u // need to fix
         }
         default:
             return state
