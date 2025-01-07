@@ -9,9 +9,17 @@ function Clock() {
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
 
+    let a = new Date()
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
+
+         let interval = setInterval (()=>{
+             let b = new Date()
+             let z = Math.round((b.getTime()-a.getTime())/1000)
+             console.log(z)
+         },1000)
+        setTimerId(+interval)
 
 
 
@@ -19,8 +27,10 @@ function Clock() {
 
 
     const stop = () => {
-        // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
 
+        // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
+        clearInterval(timerId)
+        setTimerId(0)
     }
 
     const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
@@ -48,6 +58,7 @@ function Clock() {
 
     return (
         <div className={s.clock}>
+
             <div
                 id={'hw9-watch'}
                 className={s.watch}
