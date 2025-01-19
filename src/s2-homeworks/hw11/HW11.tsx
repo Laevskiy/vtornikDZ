@@ -24,7 +24,8 @@ function HW11() {
                 //setValue1(restoreState('hw11-value1',value.value));
                 break}
             case 'two': {
-                console.log(value.value)
+
+                setValue1(value.value[0])
                 setValue2(value.value[1])
                 //setValue1(restoreState('hw11-value1',value.value));
                 //setValue2(restoreState('hw11-value2',value.value))
