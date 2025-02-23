@@ -15,9 +15,9 @@ export type SuperSortPropsType = {
 export const pureChange = (sort: string, down: string, up: string) => {
 
     switch (sort) {
-        case '': return up
-        case up: return down
-        case down: return ''
+        case '': return down
+        case down: return up
+        case up: return ''
         default:
             return sort
     }
