@@ -108,6 +108,7 @@ const HW15 = () => {
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
+
             <div id={'hw15-tech-' + t.id} className={s.tech}>
                 {t.tech}
             </div>
@@ -117,6 +118,8 @@ const HW15 = () => {
             </div>
         </div>
     ))
+
+    console.log(mappedTechs)
 
     return (
         <div id={'hw15'}>
@@ -145,6 +148,7 @@ const HW15 = () => {
                 </div>
 
                 {mappedTechs}
+
             </div>
         </div>
     )

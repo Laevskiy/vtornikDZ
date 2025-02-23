@@ -14,12 +14,19 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string) => {
 
-    switch (sort) {
-        case '': return down
-        case down: return up
-        case up: return ''
-        default:
-            return sort
+    // switch (sort) {
+    //     case '': return up
+    //     case up: return down
+    //     case down: return ''
+    //     default:
+    //         return sort
+    // }
+    if (sort === up) {
+        return down; // Если сейчас сортировка по возрастанию, меняем на убывание
+    } else if (sort === down) {
+        return ''; // Если сейчас сортировка по убыванию, сбрасываем сортировку
+    } else {
+        return up; // Если сортировка не установлена, устанавливаем по возрастанию
     }
 
     // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
